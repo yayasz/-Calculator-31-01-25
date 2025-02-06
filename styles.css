@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffe6f2; /* Fundo rosa claro */
+    font-family: Arial, sans-serif;
+}
+
+.calculadora {
+    background: #ff99cc; /* Rosa forte */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 1.5em;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    color: #ff007f; /* Texto rosa escuro */
+    font-weight: bold;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    gap: 5px;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-num {
+    background: #ffccdd; /* Botões de número rosa claro */
+    color: black;
+}
+
+.btn-num:hover {
+    background: #ffb3d9;
+}
+
+.btn-op {
+    background: #ff66a3; /* Botões de operação rosa escuro */
+    color: white;
+}
+
+.btn-op:hover {
+    background: #ff3385;
+}
+
+.btn-func {
+    background: #ff4d94; /* Botões de função (CE, C, DEL) rosa médio */
+    color: white;
+}
+
+.btn-func:hover {
+    background: #ff1a75;
+}
+
+.btn-igual {
+    grid-column: span 2;
+    background: #ff007f; /* Botão de igual rosa vibrante */
+    color: white;
+}
+
+.btn-igual:hover {
+    background: #cc0066;
+}
